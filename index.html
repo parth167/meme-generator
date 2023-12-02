@@ -8,32 +8,39 @@
   </head>
   <body>
     <h1>Welcome to Meme-Generator</h1>
-    <form>
-      <label for="image">Image URL</label>
-      <input
-        type="text"
-        name="image"
-        id="image"
-        placeholder="enter your image URL here"
-      />
+    <form id="memeform">
+      <div class="form-input">
+        <label for="image">Image URL</label>
+        <input
+          type="text"
+          name="image"
+          id="image"
+          class="input"
+          placeholder="enter your image URL here"
+        />
+      </div>
+      <div class="form-input">
+        <label for="toptext">Top Text</label>
+        <input
+          type="text"
+          name="toptext"
+          id="toptext"
+          class="input"
+          placeholder="enter your Top Text here"
+        />
+      </div>
+      <div class="form-input">
+        <label for="botmtext">Bottom Text</label>
+        <input
+          type="text"
+          name="botmtext"
+          id="botmtext"
+          class="input"
+          placeholder="enter your Bottom text here"
+        />
+      </div>
 
-      <label for="toptext">Top Text</label>
-      <input
-        type="text"
-        name="toptext"
-        id="toptext"
-        placeholder="enter your Top Text here"
-      />
-
-      <label for="botmtext">Bottom Text</label>
-      <input
-        type="text"
-        name="botmtext"
-        id="botmtext"
-        placeholder="enter your Bottom text here"
-      />
-
-      <button type="submit">Creat Meme</button>
+      <button type="submit" class="button">Creat Meme</button>
       <div id="meme"></div>
       <script src="script.js"></script>
     </form>
