@@ -28,7 +28,7 @@ form.addEventListener('submit', function (e) {
     meme.appendChild(bootomElement);
     // code for deleting the meme
     const removeButton = document.createElement('button');
-    removeButton.innerText = 'Remove';
+    removeButton.innerText = 'x';
     removeButton.addEventListener('click', () => {
       meme.remove();
     });
