@@ -8,7 +8,7 @@ form.addEventListener('submit', function (e) {
   const imageInput = document.getElementById('image').value;
   const toptextInput = document.getElementById('toptext').value;
   const bottomtextInput = document.getElementById('botmtext').value;
-  
+
   const meme = document.createElement('div');
   meme.classList.add('meme');
 
@@ -18,12 +18,12 @@ form.addEventListener('submit', function (e) {
     meme.appendChild(images);
 
     const topElement = document.createElement('div');
-    topElement.classList.add('memetxttop', 'top');
+    topElement.classList.add('memetxt', 'top');
     topElement.innerText = toptextInput;
     meme.appendChild(topElement);
 
     const bootomElement = document.createElement('div');
-    bootomElement.classList.add('memetxtbotm', 'bottom');
+    bootomElement.classList.add('memetxt', 'bottom');
     bootomElement.innerText = bottomtextInput;
     meme.appendChild(bootomElement);
 
